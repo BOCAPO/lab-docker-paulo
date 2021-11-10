@@ -1,0 +1,10 @@
+{
+    "name": "bruno/hermes",
+    "authors": [
+        {
+            "name": "Bruno Araujo",
+            "email": "bruno@invoque.com.br"
+        }
+    ],
+    "require": {}
+}

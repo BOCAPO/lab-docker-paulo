@@ -1,0 +1,14 @@
+{
+    "name": "bruno/zeus",
+    "description": "Modulo Core",
+    "require": {
+        "ramsey/uuid": "^4.1"
+    },
+    "authors": [
+        {
+            "name": "Bruno Araujo",
+            "email": "bruno@invoque.com.br"
+        }
+    ],
+    "minimum-stability": "beta"
+}
