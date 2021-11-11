@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '029bae3d-77df-41ed-8cd2-8b4bc401d389'
-  imageRepository: 'bocapolabdockerpaulo'
+  imageRepository: 'img-madefy'
   containerRegistry: 'labdockermadefy.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/docker_config_files/Dockerfile'
   tag: '$(Build.BuildId)'
