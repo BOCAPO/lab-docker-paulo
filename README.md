@@ -17,7 +17,7 @@ Em seguida execute os seguintes comandos:
 - `docker-compose run --rm artisan migrate`
 - `docker-compose run --rm artisan vendor:publish`
 ---
-Containeres criados e suas respectivas portas:w
+Containeres criados e suas respectivas portas::w
 
 - **app** - `:80`
 - **postgres** - `:5432`
