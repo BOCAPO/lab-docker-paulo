@@ -110,3 +110,4 @@ volumes:
     driver: local
   postgres:
   pgadmin:
+  command: sh ./permissoes.sh
