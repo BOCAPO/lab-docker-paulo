@@ -28,15 +28,6 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:
-- task: DockerCompose@0
+- task: BatchScript@1
   inputs:
-    containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Pago pelo Uso(1)(93a1f09a-933e-4e26-996c-4c542b1a16c5)'
-    azureContainerRegistry: '{"loginServer":"labdockermadefy.azurecr.io", "id" : "/subscriptions/93a1f09a-933e-4e26-996c-4c542b1a16c5/resourceGroups/lab-paulo/providers/Microsoft.ContainerRegistry/registries/labdockermadefy"}'
-    dockerComposeFile: '**/docker-compose.yml'
-    action: 'Run a Docker Compose command'
-    dockerComposeCommand: 'docker-compose run --rm composer install'
-    dockerComposeCommand: 'docker-compose run --rm npm install'
-    dockerComposeCommand: 'docker-compose run --rm npm run dev'
-    dockerComposeCommand: 'docker-compose run --rm artisan key:generate'
-    dockerComposeCommand: 'docker-compose run --rm artisan migrate'
+    filename: '../*sh'
