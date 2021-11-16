@@ -31,12 +31,8 @@ stages:
 - task: BatchScript@1
   inputs:
     filename: '../*sh'
-- task: DockerCompose@0
+- task: Docker@2
   inputs:
-    containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Pago pelo Uso(1)(93a1f09a-933e-4e26-996c-4c542b1a16c5)'
-    azureContainerRegistry: '{"loginServer":"labdockermadefy.azurecr.io", "id" : "/subscriptions/93a1f09a-933e-4e26-996c-4c542b1a16c5/resourceGroups/lab-paulo/providers/Microsoft.ContainerRegistry/registries/labdockermadefy"}'
-    dockerComposeFile: '**/docker-compose.yml'
-    action: 'Push services'
-    includeSourceTags: true
-    includeLatestTag: true
+    containerRegistry: 'labdockermadefy'
+    repository: 'img-madefy'
+    command: 'push'
